@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <meta charset="utf-8" />
+  <title>
+    Ninja Burger
+  </title>
+  <style>
+    #burger {
+      margin: 0;
+      margin-right: -10px;
+    }
+    .red {
+      color: darkred;
+      font-style: italic;
+    }
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+    h3 {
+       margin: 0; 
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: dimgray;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      left: 115%;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/ninja.png" alt="Ninja Mask Image" style="width: 90px; margin-right: 2em;" />
+    <h1><span class="huge">Ninja Burger</span>&ensp;We Deliver Anywhere* in 30 Minutes Or Less</h1>
+  </header>
+  <nav id="menu">
+    <ul>
+      <li class=menuBarItem id=active>Welcome</li>
+      <li class=menuBarItem><a href="order.html">Order Now</a></li>
+      <li class=menuBarItem><a href="location.html">Location</a></li>
+    </ul>
+  </nav>
+  <div id="main">
+    <div id="content">
+      <h2>Most Honored Guest</h2>
+      <p>Thank you for choosing <span style="color: darkred; font-size: 1.3em; font-weight: bold;">Ninja Burger</span>. 
+        We are honored by your visit and wish to give you the best service possible. No matter how secure your office,
+        how deep your bunker,
+        how dedicated your guards . . .
+        we deliver your burger in 30 minutes or less.  
+        <br /><span class="red">And you'll never see us come or go.</span>
+      </p>
+      <h3 class="tooltip">Anywhere?<span class="tooltiptext">Anywhere!</span></h3>
+      <p>
+        We pride ourselves on our <span class="red">speed</span> and <span class="red">stealth</span>. 
+        Our ninjas are well trained and highly skilled in the arts of travel. They each have a very particular 
+        set of skills, skills they have acquired over a very long career. We will look for you, we will 
+        find you and you will be served.
+      </p>
+    </div>
+    <div id="burger">
+      <img src="assets/burger.jpeg" alt="Hamburger and Fries Image" />
+    </div>
+  </div>
+  <footer>
+    <a href="http://www.sjgames.com/ninjaburger/">Ninja Burger is a card game from Steve Jackson Games</a>
+    <br />Creativity/Concept:&ensp;
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <br />Game Play: &ensp;
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <br /><a href="index.html">CS 213 Assignments</a>
+  </footer>
+</body>
+
+</html>

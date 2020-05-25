@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Julee|Sedgwick+Ave+Display|Tillana");
+html {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 100;
+  color: red;
+}
+h2 {
+  font-family: "Julee", cursive;
+  margin-left: 15px;
+  font-size: 2.3em;
+}
+h3 {
+  font-family: "Julee", cursive;
+  font-size: 1.5 em;
+}
+header {
+  background-color: black;
+  display: flex;
+  padding: 0.5em;
+  margin: -10px -10px 0 -10px;
+}
+footer {
+  font-family: "Julee", cursive;
+  font-size: 1.2em;
+  color: red;
+  font-weight: lighter;
+  background-color: black;
+  padding: 0.5em;
+  padding-bottom: 2em;
+  margin: -4px -10px 0 -10px;
+}
+a {
+  color: red;
+}
+a:visited {
+  color: darkred;
+}
+a:hover {
+  color: darkred;
+}
+#menu {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: dimgray;
+  padding: 0;
+  padding-left: 0;
+  margin: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#menu ul {
+  display: flex;
+  flex-direction: row;
+}
+#menu li {
+  float: left;
+  margin: 0 1em;
+}
+#menu li:hover {
+  background-color: silver;
+  border-color: gray;
+  border-style: outset;
+}
+#content {
+  flex-grow: 1;
+  padding: 0.1em 2em;
+  font-family: "Tillana", cursive;
+  font-size: 1.2em;
+}
+.huge {
+  font-size: 1.5em;
+}
+.menuBarItem {
+  flex-grow: 1;
+  list-style-type: none;
+  list-style-position: outside;
+  background-color: gray;
+  border-color: dimgray;
+  border-style: inset;
+  border-width: 2px;
+  padding: 0.5em 0;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 6em;
+  font-family: "Julee", cursive;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.menuBarItem a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+#active {
+  background-color: silver;
+  border-color: gray;
+  border-style: outset;
+}
+#main {
+  display: grid;
+  grid-template-columns: 100%;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+}
+td,
+fieldset {
+  font-family: "Tillana", cursive;
+  font-size: 1.2em;
+}
+.bold {
+  font-family: "Julee", cursive;
+  font-size: 2em;
+}
+.red {
+  font-family: "Julee", cursive;
+  font-size: 2em;
+  color: darkred;
+}
+.error {
+  color: red;
+}
+fieldset {
+  width: min-content;
+  margin: auto;
+}
+
+button {
+  font-family: "Tillana", cursive;
+  font-size: 1.2em;
+}
+form {
+  width: fit-content;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+header img {
+  width: 80px;
+  height: 87px;
+}
+@media only screen and (min-width: 768px) {
+  .menuBarItem {
+    width: 10em;
+    padding: 0.5em;
+  }
+  #menu {
+    align-content: left;
+    justify-content: left;
+  }
+}
+@media only screen and (min-width: 992px) {
+  form {
+    grid-template-columns: auto auto;
+    grid-column-gap: 2em;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  }
+  table {
+    margin-left: 3em;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 1200px) {
+    form {
+        grid-column-gap: 6em;
+    }
+}

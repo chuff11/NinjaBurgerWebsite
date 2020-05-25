@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Julee|Sedgwick+Ave+Display|Tillana');
+html {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 100;
+    color: red;
+}
+h2 {
+    font-family: 'Julee', cursive;
+    font-size: 1.75 em;
+}
+h3 {
+    font-family: 'Julee', cursive;
+    font-size: 1.5 em;
+}
+header {
+    background-color: black;
+    display: flex;
+    padding: .5em;
+    margin: -10px -10px 0 -10px;
+}
+footer {
+    font-family: 'Julee', cursive;
+    font-size: 1.2em;
+    color: red;
+    font-weight: lighter;
+    background-color: black;
+    padding: .5em;
+    padding-bottom: 2em;
+    margin: -4px -10px 0 -10px;
+}
+a {
+    color: red;
+}
+a:visited {
+    color: darkred;
+}
+a:hover {
+    color: darkred;
+}
+#menu {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    background-color: dimgray;
+    padding: 0;
+    padding-left: 0;
+    margin: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#menu ul {
+    display:inline-block;
+}
+#menu li {
+    float: left;
+    margin: 0 1em;
+}
+#menu li:hover {
+    background-color: silver;
+    border-color: gray;
+    border-style: outset;
+}
+#content {
+    flex-grow: 1;
+    padding: .1em 2em;
+    font-family: 'Tillana', cursive;
+    font-size: 1.2em;
+}
+.huge {
+    font-size: 1.5em;
+}
+.menuBarItem {
+    flex-grow: 1;
+    list-style-type: none;
+    list-style-position: outside;
+    background-color: gray;
+    border-color: dimgray;
+    border-style: inset;
+    border-width: 2px;
+    padding: .5em;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 10em;
+    font-family: 'Julee', cursive;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.menuBarItem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+#active {
+    background-color: silver;
+    border-color: gray;
+    border-style: outset;
+}
+#main {
+    display: flex;
+}
+header img {
+    width: 80px;
+    height: 87px;
+}

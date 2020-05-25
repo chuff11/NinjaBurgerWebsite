@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  
+  <meta charset="utf-8" />
+  <title>
+    Ninja Burger
+  </title>
+  <style>
+    h2 {
+      margin-left: 15px;
+      font-size: 2.3em;
+    }
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    table {
+      margin-left: 3em;
+    }
+
+    td,
+    fieldset {
+      font-family: 'Tillana', cursive;
+      font-size: 1.2em;
+    }
+
+    .column {
+      padding: .1em 2em;
+      font-family: 'Tillana', cursive;
+      font-size: 1.2em;
+    }
+
+    .bold {
+      font-family: 'Julee', cursive;
+      font-size: 2em;
+    }
+
+    .red {
+      font-family: 'Julee', cursive;
+      font-size: 2em;
+      color: darkred;
+    }
+
+    .error {
+      color: red;
+    }
+
+    fieldset {
+      margin-left: 100px;
+      width: min-content;
+      float: right;
+    }
+
+    button {
+      font-family: 'Tillana', cursive;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/ninja.png" alt="Ninja Mask Image" style="width: 90px; margin-right: 2em;" />
+    <h1><span class="huge">Ninja Burger</span>&ensp;We Deliver Anywhere* in 30 Minutes Or Less</h1>
+  </header>
+  <nav id="menu">
+    <ul>
+      <li class=menuBarItem><a href="index.html">Welcome</a></li>
+      <li class=menuBarItem id=active>Order Now</li>
+      <li class=menuBarItem><a href="location.html">Location</a></li>
+    </ul>
+  </nav>
+  <form name="OrderForm" action="submitted.html">
+    <fieldset>
+      <legend class="red">Payment Information</legend>
+      First Name:
+      <input type="text" name="first_name">
+      <br /> Last Name:
+      <input type="text" name="last_name">
+      <br /> Phone Number:
+      <input type="text" name="phone">
+      <span id="phoneError" class="error"></span>
+      <br /> Delivery Location:<br />
+      <textarea rows="4" cols="60" name="address"></textarea>
+      <br /> Credit Card Type:<br />
+      <input type="radio" name="card" value="card_0" checked>Visa<br />
+      <input type="radio" name="card" value="card_1">Mastercard<br />
+      <input type="radio" name="card" value="card_2">American Express<br /> Credit Card Number:
+      <input type="text" name="cardNumber">
+      <span id="cardError" class="error"></span>
+      <br /> Expiration Date:
+      <input type="text" name="exp_date" size=4>
+      <span id="expError" class="error"></span>
+      <br />
+      <button type="submit" name="Submit">Submit</button>
+      <button type="reset" name="Reset">Reset</button>
+    </fieldset>
+    <h2 class="red">Your Order</h2>
+    <table id="Menu">
+      <tr>
+        <td>
+          <input type="checkbox" name="item_0" />
+        </td>
+        <td class="bold">
+          Deluxe Ninja Burger $7.50
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td id="burgerOptions">
+          <input type="checkbox" name="burger" checked disabled>Tomatoes
+          <input type="checkbox" name="burger" checked disabled>Lettuce
+          <input type="checkbox" name="burger" checked disabled>Cheese
+          <input type="checkbox" name="burger" checked disabled>Bacon
+          <input type="checkbox" name="burger" checked disabled>Secret Sauce
+          <input type="checkbox" name="burger" checked disabled>Wasabi Mayo
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="item_1" />
+        </td>
+        <td class="bold">
+          Supreme Ninja Fries $2.50
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td id="fryOptions">
+          <input type="checkbox" name="fries" checked disabled>Extra Salt
+          <input type="checkbox" name="fries" checked disabled>Cheese
+          <input type="checkbox" name="fries" checked disabled>Bacon
+          <input type="checkbox" name="fries" checked disabled>Secret Sauce
+          <input type="checkbox" name="fries" checked disabled>Wasabi
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="item_2" />
+        </td>
+        <td class="bold">
+          Drink $1.50**
+          <span style="margin-left: 50px; font-size: .7em">Add $1.00 for fresh Green Tea</span>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td id="drinkOptions">
+          <input type="radio" name="soda" value="drink_0" checked disabled>Ninja Cola
+          <input type="radio" name="soda" value="drink_1" disabled>Diet Ninja Cola
+          <input type="radio" name="soda" value="drink_2" disabled>Fresh Green Tea
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td class="bold">
+          Extra Sauces 50&#162; Each
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" name="item_3">Wasabi Mayo
+          <input type="checkbox" name="item_4">Secret Sauce
+          <input type="checkbox" name="item_5">Terryaki
+          <input type="checkbox" name="item_6">Sweet and Sour
+          <input type="checkbox" name="item_7">Fiery Death
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="bold">Delivery Fee $20.00</td>
+      </tr>
+    </table>
+    <div style="margin-left: 5em;">
+      <h2 class="red">Total Price: <input type="text" name="Total" class="red" size="5" value="$20.00" readonly>
+        <span id="orderError" class="error" style="font-size: .6em;"></span></h2>
+    </div>
+    <br />
+  </form>
+  <br />
+  <footer>
+    <a href="http://www.sjgames.com/ninjaburger/">Ninja Burger is a card game from Steve Jackson Games</a>
+    <br />Creativity/Concept:&ensp;
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <br />Game Play: &ensp;
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <br /><a href="index.html">CS 213 Assignments</a>
+  </footer>
+  <script src="scripts/assign06.js"></script>
+</body>
+
+</html>

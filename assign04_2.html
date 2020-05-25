@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="week04/assign04.css">
+  <meta charset="utf-8" />
+  <title>
+    Ninja Burger
+  </title>
+  <style>
+    h2 {
+      margin-left: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    .column {
+      padding: .1em 2em;
+      font-family: 'Tillana', cursive;
+      font-size: 1.2em;
+    }
+
+    .bold {
+      font-family: 'Julee', cursive;
+      font-size: 2em;
+      color: darkred;
+    }
+
+    button {
+      font-family: 'Tillana', cursive;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="week04/ninja.png" alt="Ninja Mask Image" style="width: 90px; margin-right: 2em;" />
+    <h1><span class="huge">Ninja Burger</span>&ensp;We Deliver Anywhere* in 30 Minutes Or Less</h1>
+  </header>
+  <nav id="menu">
+    <ul>
+      <li class=menuBarItem><a href="assign04.html">Welcome</a></li>
+      <li class=menuBarItem id=active>Order Now</li>
+      <li class=menuBarItem><a href="assign04_3.html">Location</a></li>
+    </ul>
+  </nav>
+  <h2>Your Order</h2>
+  <form action="assign04_submitted.html">
+    <div id="main">
+      <div class="column">
+        <input id="burger" type="checkbox" name="order"><span class="bold">Deluxe Ninja Burger</span><br />
+        <ul>
+          <li><input id="b_tomato" type="checkbox" name="order">Tomatoes<br /></li>
+          <li><input id="b_lettuce" type="checkbox" name="order">Lettuce<br /></li>
+          <li><input id="b_cheese" type="checkbox" name="order">Cheese<br /></li>
+          <li><input id="b_bacon" type="checkbox" name="order">Bacon<br /></li>
+          <li><input id="b_sauce" type="checkbox" name="order">Secret Sauce<br /></li>
+          <li><input id="b_wasabi" type="checkbox" name="order">Wasabi Mayo<br /></li>
+        </ul>
+      </div>
+      <div class="column">
+        <input id="fries" type="checkbox" name="order"><span class="bold">Supreme Ninja Fries</span><br />
+        <ul>
+          <li><input id="f_salt" type="checkbox" name="order">Extra Salt<br /></li>
+          <li><input id="f_cheese" type="checkbox" name="order">Cheese<br /></li>
+          <li><input id="f_bacon" type="checkbox" name="order">Bacon<br /></li>
+          <li><input id="f_sauce" type="checkbox" name="order">Secret Sauce<br /></li>
+          <li><input id="f_wasabi" type="checkbox" name="order">Wasabi<br /></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2>
+        Delivery Location:
+      </h2>
+      <textarea rows="4" cols="85" style="margin-left: 35px;"></textarea>
+    </div>
+    <div id="button">
+      <br />
+      <div class="column">
+        Please leave tip, and only intented tip in left back pocket. Thank you.
+      </div>
+      <br />
+      <button type="submit" style="margin-left:35px">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+  <br />
+  <footer>
+    <a href="http://www.sjgames.com/ninjaburger/">Ninja Burger is a card game from Steve Jackson Games</a>
+    <br />Creativity/Concept:&ensp;
+    <img src="week04/star.png" alt="Star Icon" />
+    <img src="week04/star.png" alt="Star Icon" />
+    <img src="week04/star.png" alt="Star Icon" />
+    <img src="week04/star.png" alt="Star Icon" />
+    <img src="week04/star.png" alt="Star Icon" />
+    <br />Game Play: &ensp;
+    <img src="week04/star.png" alt="Star Icon" />
+    <img src="week04/star.png" alt="Star Icon" />
+    <br /><a href="index.html">CS 213 Assignments</a>
+  </footer>
+</body>
+
+</html>

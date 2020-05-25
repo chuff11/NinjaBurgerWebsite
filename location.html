@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/secondary.css">
+  <meta charset="utf-8" />
+  <title>
+    Ninja Burger
+  </title>
+  <style>
+    h2 {
+      margin-top: 1.5em;
+      color: black;
+      font-size: 1.6em;
+    }
+
+    #main {
+      display: block;
+      text-align: center;
+      align-items: center;
+    }
+
+    .vanishing {
+      animation: vanish 8s infinite;
+    }
+
+    @keyframes vanish {
+      0% {
+        opacity: 1.0;
+      }
+      40% {
+        opacity: 0.0;
+      }
+      60% {
+        opacity: 0.0;
+      }
+      100% {
+        opacity: 1.0;
+      }
+    }
+
+    #content {
+      font-size: 1.4em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/ninja.png" alt="Ninja Mask Image" style="width: 90px; margin-right: 2em;" />
+    <h1><span class="huge">Ninja Burger</span>&ensp;We Deliver Anywhere* in 30 Minutes Or Less</h1>
+  </header>
+  <nav id="menu">
+    <ul>
+      <li class=menuBarItem><a href="index.html">Welcome</a></li>
+      <li class=menuBarItem><a href="order.html">Order Now</a></li>
+      <li class=menuBarItem id=active>Location</li>
+    </ul>
+  </nav>
+  <div id="main">
+    <h2>A <span style="font-style:italic; color:darkred;">thousand</span> apologies most honored guest</h2>
+    <img src="assets/sorry.png" alt="Image of Ninja bowing" class="vanishing" />
+    <div id="content">It is not so easy to find a <span style="color:darkred;">ninja</span>.</div>
+    <br />
+  </div>
+  <footer>
+    <a href="http://www.sjgames.com/ninjaburger/">Ninja Burger is a card game from Steve Jackson Games</a>
+    <br />Creativity/Concept:&ensp;
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <br />Game Play: &ensp;
+    <img src="assets/star.png" alt="Star Icon" />
+    <img src="assets/star.png" alt="Star Icon" />
+    <br /><a href="index.html">CS 213 Assignments</a>
+  </footer>
+</body>
+
+</html>
