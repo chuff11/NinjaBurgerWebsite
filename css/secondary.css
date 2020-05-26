@@ -108,6 +108,7 @@ a:hover {
   align-content: center;
   justify-content: center;
   margin: auto;
+  width: 100%;
 }
 ul {
   list-style-type: none;
